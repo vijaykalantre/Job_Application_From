@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap')
+
+
+
+ *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  font-family: "Urbanist", sans-serif;
+} 
+.apply-box{
+  max-width:600px;
+  margin:0 auto;
+  padding: 30px;
+  margin-top: 50px;
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.from_container{
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  margin-top: 20px;
+  gap:20px
+}
+h1{
+  text-transform: capitalize;
+}
+.small-title{
+  color: #4942E4;
+  font-size: 1rem;
+  font-weight:300;
+  font-family: "Urbanist", sans-serif;
+}
+.from_control{
+  display:flex;
+  flex-direction: column;
+}
+input,textarea{
+  padding: 10px 10px;
+  border-radius: 8px;
+  background-color:white;
+  border:1px solid #cbc9ee;
+  
+}
+label{
+  text-transform: capitalize;
+  margin-bottom:5px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+}
+input::placeholder,textarea::placeholder{
+   font-family: "Urbanist", sans-serif;
+  font-weight: 100;
+  text-transform: capitalize;
+  color: #bababa;
+
+}
+
+input:focus,textarea:focus{
+  outline-color:red;
+}
+.btn{
+  display: flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+button{
+  width: 100%;
+  padding:10px 10px;
+  border:none;
+  border-radius:6px;
+  font-family: "Urbanist", sans-serif;
+  background-color: #4942E4;
+  color:white;
+  transition: 0.3s;
+  
+  
+}
+button:hover{
+  background-color:#afade6 ;
+  color: black;
+}
